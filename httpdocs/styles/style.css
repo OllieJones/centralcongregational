@@ -1,0 +1,388 @@
+/*div { outline: 1px solid red; }*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  background: #fff url('../images/background.png') repeat;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+#title-bar {
+  background-image: url('../images/churchpic.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  /*background-attachment: fixed;*/
+  background-color: #81bee7;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 175px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#title-bar img {
+  width: 100%;
+}
+
+#title {
+  display: block;
+  font-size: 1.5em;
+  margin-top: -0.5px;
+  padding-left: 30px;
+}
+
+#location {
+  display: block;
+  font-size: 1.0em;
+  margin-top: -25px;
+  padding-left: 30px;
+}
+
+#menu-bar {
+  /* fallback */
+  background-color: #0b2161;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#0b2161));
+  background: -webkit-linear-gradient(top, #0b2161, #1a82f7);
+  background: -moz-linear-gradient(top, #0b2161, #1a82f7);
+  background: -ms-linear-gradient(top, #0b2161, #1a82f7);
+  background: -o-linear-gradient(top, #0b2161, #1a82f7);  
+  /*background-color: #0B2161; /*#81bef7;*/ /* 49a1f3 */*/
+  display: block;
+  font-size: 1.0em;
+  text-align: center;
+  width: 100%;
+}
+
+#menu-bar a {
+  color: #fff;
+}
+
+#side-menu {
+  font-size: 1.0em;
+  width: 150px;
+  padding-top: 20px;
+}
+
+#side-menu ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#side-menu li {
+  list-style: none;
+}
+
+ul.side-menu-links {
+  background: #0b3861;
+  padding-top: 20px;
+}
+
+ul.side-menu-links li{
+  border-bottom: #fff solid;
+  border-top: #fff solid;
+  border-width: 1px;
+  padding: 20px 0;
+}
+
+#side-menu a {
+ color: #fff;
+ cursor: pointer;
+ display: block;
+ height: 25px;
+ line-height: 25px;
+ text-indent: 10px;                   
+ text-decoration: none;
+ width: 100%;
+}
+
+#side-menu a:hover{
+ text-decoration: underline;
+}
+
+#events-calendar {
+  background: #0b3861;
+  color: #fff;
+  padding: 3px 0;
+  text-align: center;
+}
+
+#pledge-drive {
+  font-weight: bold;
+  text-align: center;
+}
+
+#church-pic {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#worship-top {
+ background-color: #0b3861;
+ border-color: #0b3861;
+ border-style: solid;
+ border-width: 2px;
+ color: #fff;
+ padding: 10px 5px;
+}
+
+#worship {
+ border-width: 2px;
+ border-color: #0b3861;
+ border-style: solid;
+ padding: 10px 5px;
+}
+
+#welcome,
+#main-info-1,
+#main-info-2,
+#main-info-3 {
+  text-align: center;
+}
+
+#main-info-4,
+#main-info-5 {
+  text-align: left;
+}
+
+#welcome {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#main-info-1 {
+  font-size: 1.0em;
+  /*padding-bottom: 15px;*/
+  padding: 0 50px 25px 100px;
+}
+
+#main-info-2 {
+  font-size: 1.0em;
+  /*padding: 0 55px 25px 55px;*/
+  padding: 0 50px 25px 100px;
+}
+
+#main-info-3 {
+  font-size: 1.25em;
+  padding: 0 20px;
+}
+
+#main-info-4,
+#main-info-5 {
+  font-size: 1.0em;
+  padding: 0 50px 0 100px;
+}
+
+#spacer-bar {
+  background: #b8e1fc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8e1fc), color-stop(10%,#a9d2f3), color-stop(25%,#90bae4), color-stop(37%,#90bcea), color-stop(50%,#90bff0), color-stop(51%,#6ba8e5), color-stop(83%,#a2daf5), color-stop(100%,#bdf3fd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 ); /* IE6-9 */
+  margin-bottom: 5px;
+}
+
+.promo-title {
+  color: #0b3861;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
+.promo-list {
+  text-align: left;
+}
+
+.promo-item {
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.promo-item a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+#gold-banner {
+  width: 100%;
+  height: 50px;
+}
+
+.pic-padding {
+  padding-left: 30px;
+}
+
+#footer {
+  background-color: #977611; /*#4B8A08;*/ /*#B18904; *//*#925523; *//*#0B3861; *//*#272626;*/
+  color: #e6e6e6;
+  font-size: 1.0em;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#address,
+#copyright,
+#email,
+#pastor,
+#phone,
+#website {
+  text-align: center;
+}
+
+#address,
+#pastor {
+  font-size: 1.0em;
+  padding-top: 20px;
+}
+
+#pastor {
+  padding-bottom: 30px;
+}
+
+#info-email-address,
+#pastor-email-address,
+#phone-number {
+  font-size: 1.0em;
+  color: #e6e6e6;
+  display: inline;
+  padding-left: 5px;
+}
+
+#email,
+#phone {
+  padding-bottom: 20px;
+}
+
+#email a,
+#pastor a,
+#phone a {
+ font-size: 1.0em;
+ color: #9e9e9e;
+ text-decoration: none;
+}
+
+#social-media {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.social-media-icon {
+  height: 32px;
+  width: 32px;
+}
+
+#copyright,
+#website {
+  font-size: 0.85em;
+}
+
+#tagline {
+  font-size: 0.75em;
+}
+
+#tagline a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#website a,
+#website a:active,
+#website a:visited,
+#website a:hover {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+
+/*-----CALENDAR-----*/
+#calendar {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  border-left: 1px solid #a2adbc;
+  font: normal 12px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #616b76;
+  text-align: center;
+  background-color: #fff;
+}
+
+.nav, .nav a {
+  font: bold 18px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #fff;  
+  text-align: center;
+  text-decoration: none;
+} 
+
+caption {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background: #a2adbc;
+  color: #fff;   
+  font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+th {
+  font: bold 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #616B76;
+  background: #D9E2E1;
+  border-right: 1px solid #a2adbc;
+  border-bottom: 1px solid #a2adbc;
+  border-top: 1px solid #a2adbc;
+}
+
+.today, td.today a, td.today a:link, td.today a:visited {
+  color: #f6f4da;
+  font-weight: bold;
+  background: #df9496;
+}
+
+td {
+  border-right: 1px solid #a2adbc;
+  border-bottom: 1px solid #a2adbc;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: url(images/bg_calendar.gif) no-repeat right bottom;
+}
+
+td a {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+td a:link, td a:visited { 
+  color: #608194;
+  background: url(images/bg_calendar.gif) no-repeat;
+}
+
+td a:hover, td a:active {
+  color: #6aa3ae;
+  background: url(images/bg_calendar.gif) no-repeat right top;
+}
